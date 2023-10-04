@@ -1,0 +1,14 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+
+    <changeSet id="20231004_insert_into_table_storages" author="muhammed.m92@bk.ru">
+        <sql>
+            INSERT INTO storages (name_storages, number_storages, address_storages) VALUES ('Склад №1', 111, 'Жуалы 101');
+            INSERT INTO storages (name_storages, number_storages, address_storages) VALUES ('Склад №2', 222, 'Толе би 159');
+            INSERT INTO storages (name_storages, number_storages, address_storages) VALUES ('Склад №3', 333, 'Исаева 88');
+
+        </sql>
+    </changeSet>
+</databaseChangeLog>

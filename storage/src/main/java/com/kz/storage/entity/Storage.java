@@ -19,8 +19,10 @@ public class Storage {
     @GeneratedValue(strategy = GenerationType.UUID)
     @Column(name = "id")
     private UUID id;
-    @Column(name = "nameStorage")
+    @Column(name = "nameStorages")
     private String nameStorage;
-    @Column(name = "numberStorage")
-    private String numberStorage;
+    @Column(name = "numberStorages")
+    private Integer numberStorage;
+    @Column(name = "address_storages")
+    private String address_storages;
 }

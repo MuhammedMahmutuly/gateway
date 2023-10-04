@@ -1,0 +1,25 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+
+
+    <changeSet id="20231001_insert_into_table_products" author="muhammed.m92@bk.ru">
+        <sql>
+            INSERT INTO products (name, model, type) VALUES ('Playstation 5', 'с дисководом', 'technique');
+            INSERT INTO products (name, model, type) VALUES ('SEGA', '2', 'technique');
+            INSERT INTO products (name, model, type) VALUES ('ACER', 'Notebook', 'technique');
+            INSERT INTO products (name, model, type) VALUES ('Samsung', 'Television', 'technique');
+            INSERT INTO products (name, model, type) VALUES ('Гитара', 'acoustic', 'музыкальный инструмент');
+            INSERT INTO products (name, model, type) VALUES ('Футболка', 'Oversize', 'Одежда');
+            INSERT INTO products (name, model, type) VALUES ('Apple', '15', 'technique');
+            INSERT INTO products (name, model, type) VALUES ('Куртка', 'Classic', 'Одежда');
+            INSERT INTO products (name, model, type) VALUES ('Крассовка', 'Nike', 'Обувь');
+            INSERT INTO products (name, model, type) VALUES ('Сумка', 'Chanel', 'аксессуар');
+            INSERT INTO products (name, model, type) VALUES ('Диван', 'семейный', 'мебель');
+            INSERT INTO products (name, model, type) VALUES ('Хрусталь', 'для шампантское', 'посуда');
+            INSERT INTO products (name, model, type) VALUES ('NY', 'Кепка', 'Одежда');
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>

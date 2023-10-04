@@ -1,0 +1,33 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+
+    <!--    <changeSet id="V1__create_table" author="Muhammed">-->
+    <!--        <createTable tableName="products">-->
+    <!--            <column name="id" type="uuid" autoIncrement="true">-->
+    <!--                <constraints primaryKey="true" nullable="false"/>-->
+    <!--            </column>-->
+    <!--            <column name="name" type="varchar(255)">-->
+    <!--                <constraints nullable="false"/>-->
+    <!--            </column>  -->
+    <!--            <column name="type" type="varchar(255)">-->
+    <!--                <constraints nullable="false"/>-->
+    <!--            </column>-->
+    <!--        </createTable>-->
+    <!--    </changeSet>-->
+
+    <changeSet id="create_table_products" author="muhammed.m92@bk.ru">
+        <sql>
+            CREATE TABLE products
+            (
+                id    UUID DEFAULT gen_random_uuid() not null,
+                name  varchar(255),
+                model varchar(255),
+                type  varchar(255),
+                primary key (id)
+            );
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>
