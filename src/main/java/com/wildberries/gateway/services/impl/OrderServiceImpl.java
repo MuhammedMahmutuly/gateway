@@ -7,12 +7,6 @@ import org.springframework.web.client.RestTemplate;
 
 @Service
 public class OrderServiceImpl implements OrderService {
-    private final RestTemplate restTemplate;
-
-    public OrderServiceImpl(RestTemplate restTemplate) {
-        this.restTemplate = restTemplate;
-    }
-
     @Override
     public OrderDTO getAllOrders() {
         return null;

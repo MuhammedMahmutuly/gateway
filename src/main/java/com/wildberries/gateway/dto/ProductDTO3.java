@@ -1,19 +1,15 @@
 package com.wildberries.gateway.dto;
 
-
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import lombok.*;
 
-import java.util.UUID;
-@Builder // строитель
+@Builder
+@Getter
 @Setter
-@Getter //ля геттер сеттер
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
-public class ProductDTO {
-    private UUID id;
-    private String name;
-    private String model;
-    private String type;
+public class ProductDTO3 {
+    String type;
+    String model;
 }
